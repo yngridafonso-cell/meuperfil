@@ -38,20 +38,83 @@ width: 25%;
 padding-right: 30px;
 }
 /* Configuração do Banner Principal */
-.banner1 {
+.banner1
+
   /* Configuração do Banner Principal */
-.banner1 {
-  display: flex; /* Ativa o Flexbox */
-  align-items: center; /* Alinha foto e texto verticalmente ao centro */
-  justify-content: space-between; /* Distribui o espaço entre os dois lados */
-  gap: 40px; /* Espaço entre a foto e o texto */
-  padding: 60px 40px; /* Margem interna do banner (cima/baixo e lados) */
-  background: linear-gradient(135deg, #1e293b, #0f172a); /* Fundo moderno em azul-escuro sofisticado */
-  max-width: 1200px; /* Limita a largura máxima do banner */
-  margin: 20px auto; /* Centraliza o banner na tela e afasta dos lados */
-  border-radius: 12px; /* Cantos arredondados no banner */
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3); /* Sombra suave para dar profundidade */
+/* Configuração Geral da Página (Opcional) */
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
 }
+
+/* ESTRUTURA DO BANNER PRINCIPAL */
+.banner1 {
+  display: flex;          /* Ativa o Flexbox para alinhar lado a lado */
+  align-items: center;    /* Alinha a foto e o texto verticalmente ao centro */
+  justify-content: space-between; /* Distribui o espaço entre os dois lados */
+  gap: 40px;              /* Cria um espaçamento de 40px entre a foto e o texto */
+  padding: 50px;          /* Espaço interno do banner */
+  max-width: 1100px;      /* Limita a largura máxima do banner */
+  margin: 0 auto;         /* Centraliza o banner na tela */
+  
+  /* Cor de fundo escolhida: Gradiente Azul-Escuro Sofisticado */
+  background: linear-gradient(135deg, #1e293b, #0f172a); 
+  
+  border-radius: 16px;    /* Cantos arredondados no banner */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+}
+
+/* Container da Imagem (Lado Esquerdo) */
+.banner-foto-container {
+  flex: 1;                /* Ocupa espaço proporcional na distribuição */
+  max-width: 45%;         /* Limita o tamanho para não cobrir o texto */
+}
+
+.foto-pessoal {
+  width: 100%;            /* A foto se ajusta ao tamanho do container */
+  height: auto;           /* Mantém a proporção original da imagem */
+  border-radius: 12px;    /* Cantos arredondados na foto */
+  object-fit: cover;      /* Garante o preenchimento correto */
+  border: 3px solid rgba(255, 255, 255, 0.1); /* Borda fina e discreta */
+}
+
+/* Bloco de Texto (Lado Direito) */
+.banner-texto {
+  flex: 1;                /* Ocupa o espaço restante */
+  max-width: 50%;         /* Limita a largura do bloco de texto */
+}
+
+.banner-texto h2 {
+  font-size: 2.2rem;
+  color: #f8fafc;         /* Cor do título (Quase Branco) */
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.banner-texto p {
+  font-size: 1.1rem;
+  color: #cbd5e1;         /* Cor do texto (Cinza Claro) */
+  line-height: 1.6;       /* Espaçamento confortável entre as linhas */
+  margin: 0;
+}
+
+/* RESPONSIVIDADE: Adaptação para Celulares */
+@media (max-width: 768px) {
+  .banner1 {
+    flex-direction: column; /* Empilha a foto em cima do texto em telas pequenas */
+    text-align: center;     /* Centraliza o texto no celular */
+    padding: 30px 20px;     /* Diminui o espaçamento interno no mobile */
+    gap: 30px;
+  }
+
+  .banner-foto-container, 
+  .banner-texto {
+    max-width: 100%;        /* Libera largura total para ambos no celular */
+  }
+}
+
 
 /* Controle da Imagem */
 .banner-foto-container {
