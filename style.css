@@ -198,9 +198,12 @@ text-align: center;
 }
 
 .essa_sou_eu {
-  padding: 40px 20px;
-  text-align: center;
-  background-color: #f8fafc;
+  display: flex;
+  flex-direction: column; /* Alinha o título acima do parágrafo */
+  justify-content: center; /* Centraliza verticalmente (cima/baixo) */
+  align-items: center;     /* Centraliza horizontalmente (esquerda/direita) */
+  min-height: 100vh;       /* Faz a seção ocupar 100% da altura da tela */
+  text-align: center;      /* Garante que o texto fique centralizado */
 }
 
 .titulo_site {
