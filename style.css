@@ -39,34 +39,69 @@ padding-right: 30px;
 }
 /* Configuração do Banner Principal */
 .banner1 {
+  /* Configuração do Banner Principal */
+.banner1 {
   display: flex; /* Ativa o Flexbox */
   align-items: center; /* Alinha foto e texto verticalmente ao centro */
   justify-content: space-between; /* Distribui o espaço entre os dois lados */
-  gap: 30px; /* Cria um espaçamento de 30px entre a foto e o texto */
-  padding: 40px; /* Margem interna do banner */
-  background-color: #f5f5f5; /* Cor de fundo opcional */
+  gap: 40px; /* Espaço entre a foto e o texto */
+  padding: 60px 40px; /* Margem interna do banner (cima/baixo e lados) */
+  background: linear-gradient(135deg, #1e293b, #0f172a); /* Fundo moderno em azul-escuro sofisticado */
   max-width: 1200px; /* Limita a largura máxima do banner */
-  margin: 0 auto; /* Centraliza o banner na tela */
+  margin: 20px auto; /* Centraliza o banner na tela e afasta dos lados */
+  border-radius: 12px; /* Cantos arredondados no banner */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3); /* Sombra suave para dar profundidade */
 }
 
 /* Controle da Imagem */
 .banner-foto-container {
-  flex: 1; /* Faz a área da foto ocupar espaço proporcional */
-  max-width: 45%; /* Garante que a foto não passe da metade do banner */
+  flex: 1; 
+  max-width: 45%; 
 }
 
 .foto-pessoal {
   width: 100%; /* A foto ocupa 100% do container dela */
-  height: auto; /* Mantém a proporção da imagem sem distorcer */
-  border-radius: 8px; /* Cantos levemente arredondados (opcional) */
-  object-fit: cover; /* Garante bom preenchimento */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 8px; /* Cantos levemente arredondados na foto */
+  object-fit: cover; 
+  border: 3px solid rgba(255, 255, 255, 0.1); /* Borda fina e discreta ao redor da foto */
 }
 
 /* Controle do Texto */
 .banner-texto {
-  flex: 1; /* Faz o texto ocupar o espaço restante */
-  max-width: 50%; /* Limita a largura do bloco de texto */
+  flex: 1; 
+  max-width: 50%; 
 }
+
+.banner-texto h2 {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  color: #f8fafc; /* Texto principal quase branco para alto contraste */
+  font-family: sans-serif;
+}
+
+.banner-texto p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #cbd5e1; /* Texto secundário em cinza-claro azulado para leitura confortável */
+  font-family: sans-serif;
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 768px) {
+  .banner1 {
+    flex-direction: column; /* Empilha a foto em cima do texto no celular */
+    text-align: center; /* Centraliza os textos */
+    padding: 40px 20px;
+    gap: 25px;
+  }
+  
+  .banner-foto-container, 
+  .banner-texto {
+    max-width: 100%; /* Ocupa a largura total da tela do celular */
+  }
+}
+
 
 .banner-texto h2 {
   font-size: 2rem;
