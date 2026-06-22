@@ -196,6 +196,32 @@ padding: 100px;
 text-align: center;
 
 }
+
+.essa_sou_eu {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f8fafc;
+}
+
+.titulo_site {
+  color: #0f172a;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+
+.essa_sou_eu p {
+  font-size: 1.1rem;
+  color: #475569;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Evita que o texto gigante quebre no celular */
+@media (max-width: 600px) {
+  .titulo_site { font-size: 40px !important; }
+}
+
 .estudante-nome{
 text-align: center;
 }
