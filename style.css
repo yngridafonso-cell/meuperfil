@@ -241,38 +241,8 @@ padding: 24px 0;
 }
 
 .estudante.div{
-/* Bloco Principal */
-.card-bloco 
-  display: flex;
-  align-items: center;
-  background-color: #f4f4f9; /* Altere a cor de fundo aqui */
-  padding: 16px;
-  border-radius: 8px;
-  max-width: 500px;
-  gap: 20px; /* Cria o espaço automático entre a imagem e o texto */
-}
-
-/* Tamanho da Imagem */
-.card-bloco img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-/* Área de Texto */
-.card-conteudo {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-/* Adaptação para celular */
-@media (max-width: 480px) {
-  .card-bloco {
-    flex-direction: column;
-    text-align: center;
-  }
+text-align: center;
+padding: 24px 0;
 }
 
 .estudantes_todos{
