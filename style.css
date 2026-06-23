@@ -197,7 +197,7 @@ text-align: center;
 
 }
 
-.essa_sou_eu {
+.Minhas_músicas {
   display: flex;
   flex-direction: column; /* Alinha o título acima do parágrafo */
   justify-content: center; /* Centraliza verticalmente (cima/baixo) */
@@ -248,6 +248,34 @@ padding: 24px 0;
 .estudantes_todos{
 display: flex;
 justify-content: space-around;
+}
+
+.essa_sou_eu {
+  display: flex;
+  flex-direction: column; /* Alinha o título acima do parágrafo */
+  justify-content: center; /* Centraliza verticalmente (cima/baixo) */
+  align-items: center;     /* Centraliza horizontalmente (esquerda/direita) */
+  min-height: 100vh;       /* Faz a seção ocupar 100% da altura da tela */
+  text-align: center;      /* Garante que o texto fique centralizado */
+}
+
+.titulo_site {
+  color: #0f172a;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+
+.essa_sou_eu p {
+  font-size: 1.1rem;
+  color: #475569;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Evita que o texto gigante quebre no celular */
+@media (max-width: 600px) {
+  .titulo_site { font-size: 40px !important; }
 }
 .escola{
 background-image: linear-gradient(#40A2E3,#7FC2EF);
