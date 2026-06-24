@@ -7,8 +7,8 @@ body{
 font-family: "Poppins", sans-serif;
 }
 header{
-background-color: #232F72;
-color: white;
+background-color: #4B5694;
+color: #f8fafc;
 width: 100%;
 padding: 20px;
 }
@@ -60,7 +60,7 @@ body {
   margin: 0 auto;         /* Centraliza o banner na tela */
   
   /* Cor de fundo escolhida: Gradiente Azul-Escuro Sofisticado */
-  background: linear-gradient(135deg, #1e293b, #0f172a); 
+  background: linear-gradient(135deg, #000000, #111844); 
   
   border-radius: 16px;    /* Cantos arredondados no banner */
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
