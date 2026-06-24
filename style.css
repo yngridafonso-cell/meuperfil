@@ -239,6 +239,7 @@ section.estudante {
 .estudante-div {
     flex: 0 0 220px;        /* Fixa a largura de cada bloco em 220px para não amassarem */
     text-align: center;     /* Centraliza as fotos e os textos */
+    gap: 24px;
 }
 
 /* Ajusta o tamanho das imagens para preencherem o bloco */
