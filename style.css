@@ -150,13 +150,45 @@ body {
   font-family: sans-serif;
 }
 
-/* Responsividade para Celulares */
+/* --- Estilos para Computador (Desktop) --- */
+.banner1 {
+  display: flex;
+  align-items: center; /* Centraliza os itens verticalmente */
+  justify-content: space-between; /* Afasta a imagem do texto */
+  width: 100vw; /* Ocupa 100% da largura da tela */
+  min-height: 100vh; /* Ocupa 100% da altura da tela */
+  box-sizing: border-box;
+  padding: 60px;
+  gap: 40px;
+}
+
+.banner-foto-container {
+  flex: 1; /* Distribui o espaço igualmente */
+  max-width: 50%; /* Garante que a foto ocupe metade da tela */
+}
+
+.banner-texto {
+  flex: 1; /* Distribui o espaço igualmente */
+  max-width: 50%; /* Garante que o texto ocupe metade da tela */
+}
+
+/* Garante que a imagem se ajuste ao container */
+.banner-foto-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+/* --- Responsividade para Celulares (Mobile) --- */
 @media (max-width: 768px) {
   .banner1 {
-    flex-direction: column; /* Empilha a foto em cima do texto no celular */
+    flex-direction: column; /* Empilha a foto em cima do texto */
     text-align: center; /* Centraliza os textos */
     padding: 40px 20px;
     gap: 25px;
+    width: 100%; /* Reseta a largura para evitar barras de rolagem */
+    min-height: auto; /* Libera a altura automática para o conteúdo */
   }
   
   .banner-foto-container, 
@@ -165,31 +197,6 @@ body {
   }
 }
 
-
-.banner-texto h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
-  color: #333;
-}
-
-.banner-texto p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #666;
-}
-
-/* Responsividade para Celulares */
-@media (max-width: 768px) {
-  .banner1 {
-    flex-direction: column; /* Empilha a foto em cima do texto em telas pequenas */
-    text-align: center; /* Centraliza o texto no celular */
-  }
-  
-  .banner-foto-container, 
-  .banner-texto {
-    max-width: 100%; /* Libera a largura total no celular */
-  }
-}
 
 .estudante_titulo{
 padding: 100px;
