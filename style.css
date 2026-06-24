@@ -37,8 +37,8 @@ justify-content: flex-end;
 width: 25%;
 padding-right: 30px;
 }
-/* Configuração do Banner Principal */
-.banner1
+
+
 
   /* Configuração do Banner Principal */
 /* Configuração Geral da Página (Opcional) */
@@ -49,153 +49,77 @@ body {
   background-color: #f0f2f5;
 }
 
-/* ESTRUTURA DO BANNER PRINCIPAL */
+/* --- ESTRUTURA DO BANNER PRINCIPAL (DESKTOP) --- */
 .banner1 {
-  display: flex;          /* Ativa o Flexbox para alinhar lado a lado */
-  align-items: center;    /* Alinha a foto e o texto verticalmente ao centro */
-  justify-content: space-between; /* Distribui o espaço entre os dois lados */
-  gap: 40px;              /* Cria um espaçamento de 40px entre a foto e o texto */
-  padding: 50px;          /* Espaço interno do banner */
-  max-width: 1200px;      /* Limita a largura máxima do banner */
-  margin: 0 auto;         /* Centraliza o banner na tela */
+  display: flex;          /* Alinha foto e texto lado a lado */
+  align-items: center;    /* Centraliza verticalmente a foto e o texto */
+  justify-content: space-between; 
+  gap: 40px;              
   
-  /* Cor de fundo escolhida: Gradiente Azul-Escuro Sofisticado */
+  /* Controle de Altura e Espaçamento Interno */
+  padding: 20px 80px;     /* 20px acima/abaixo (máx. 2cm) e 80px nas laterais */
+  width: 100%;            /* Faz o banner ocupar toda a largura da tela */
+  box-sizing: border-box; /* Garante que o padding não quebre o layout */
+  
+  /* Fundo Gradiente cobrindo tudo de ponta a ponta */
   background: linear-gradient(135deg, #000000, #111844); 
   
-  border-radius: 16px;    /* Cantos arredondados no banner */
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+  /* Removido border-radius para o fundo tocar as bordas do monitor */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); 
 }
 
 /* Container da Imagem (Lado Esquerdo) */
 .banner-foto-container {
-  flex: 1;                /* Ocupa espaço proporcional na distribuição */
-  max-width: 45%;         /* Limita o tamanho para não cobrir o texto */
+  flex: 1;                
+  max-width: 45%;         
 }
 
 .foto-pessoal {
-  width: 100%;            /* A foto se ajusta ao tamanho do container */
-  height: auto;           /* Mantém a proporção original da imagem */
-  border-radius: 12px;    /* Cantos arredondados na foto */
-  object-fit: cover;      /* Garante o preenchimento correto */
-  border: 3px solid rgba(255, 255, 255, 0.1); /* Borda fina e discreta */
+  width: 100%;            /* A foto se ajusta ao container */
+  height: auto;           /* Mantém a proporção original */
+  display: block;         /* Remove espaços fantasmas abaixo da imagem */
+  border-radius: 12px;    
+  object-fit: cover;      
+  border: 3px solid rgba(255, 255, 255, 0.1); 
 }
 
 /* Bloco de Texto (Lado Direito) */
 .banner-texto {
-  flex: 1;                /* Ocupa o espaço restante */
-  max-width: 50%;         /* Limita a largura do bloco de texto */
+  flex: 1;                
+  max-width: 50%;         
 }
 
 .banner-texto h2 {
   font-size: 2.2rem;
-  color: #f8fafc;         /* Cor do título (Quase Branco) */
+  color: #f8fafc;         
   margin-top: 0;
   margin-bottom: 16px;
+  font-family: sans-serif;
 }
 
 .banner-texto p {
   font-size: 1.1rem;
-  color: #232F72;         /* Cor do texto (Cinza Claro) */
-  line-height: 1.6;       /* Espaçamento confortável entre as linhas */
+  color: #cbd5e1;         /* Corrigido para o cinza-claro de leitura confortável */
+  line-height: 1.6;       
   margin: 0;
-}
-
-/* RESPONSIVIDADE: Adaptação para Celulares */
-@media (max-width: 768px) {
-  .banner1 {
-    flex-direction: column; /* Empilha a foto em cima do texto em telas pequenas */
-    text-align: center;     /* Centraliza o texto no celular */
-    padding: 30px 20px;     /* Diminui o espaçamento interno no mobile */
-    gap: 30px;
-  }
-
-  .banner-foto-container, 
-  .banner-texto {
-    max-width: 100%;        /* Libera largura total para ambos no celular */
-  }
-}
-
-
-/* Controle da Imagem */
-.banner-foto-container {
-  flex: 1; 
-  max-width: 45%; 
-}
-
-.foto-pessoal {
-  width: 100%; /* A foto ocupa 100% do container dela */
-  height: auto; /* Mantém a proporção da imagem */
-  border-radius: 8px; /* Cantos levemente arredondados na foto */
-  object-fit: cover; 
-  border: 3px solid rgba(255, 255, 255, 0.1); /* Borda fina e discreta ao redor da foto */
-}
-
-/* Controle do Texto */
-.banner-texto {
-  flex: 1; 
-  max-width: 50%; 
-}
-
-.banner-texto h2 {
-  font-size: 2.2rem;
-  margin-bottom: 15px;
-  color: #f8fafc; /* Texto principal quase branco para alto contraste */
   font-family: sans-serif;
 }
 
-.banner-texto p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #cbd5e1; /* Texto secundário em cinza-claro azulado para leitura confortável */
-  font-family: sans-serif;
-}
-
-/* --- Estilos para Computador (Desktop) --- */
-.banner1 {
-  display: flex;
-  align-items: center; /* Centraliza os itens verticalmente */
-  justify-content: space-between; /* Afasta a imagem do texto */
-  width: 100vw; /* Ocupa 100% da largura da tela */
-  min-height: 100vh; /* Ocupa 100% da altura da tela */
-  box-sizing: border-box;
-  padding: 60px;
-  gap: 40px;
-}
-
-.banner-foto-container {
-  flex: 1; /* Distribui o espaço igualmente */
-  max-width: 50%; /* Garante que a foto ocupe metade da tela */
-}
-
-.banner-texto {
-  flex: 1; /* Distribui o espaço igualmente */
-  max-width: 50%; /* Garante que o texto ocupe metade da tela */
-}
-
-/* Garante que a imagem se ajuste ao container */
-.banner-foto-container img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-
-/* --- Responsividade para Celulares (Mobile) --- */
+/* --- RESPONSIVIDADE: Adaptação para Celulares --- */
 @media (max-width: 768px) {
   .banner1 {
-    flex-direction: column; /* Empilha a foto em cima do texto */
-    text-align: center; /* Centraliza os textos */
-    padding: 40px 20px;
+    flex-direction: column; /* Empilha a foto em cima do texto no celular */
+    text-align: center;     
+    padding: 30px 20px;     /* Ajusta o espaçamento interno para telas pequenas */
     gap: 25px;
-    width: 100%; /* Reseta a largura para evitar barras de rolagem */
-    min-height: auto; /* Libera a altura automática para o conteúdo */
   }
-  
+
   .banner-foto-container, 
   .banner-texto {
-    max-width: 100%; /* Ocupa a largura total da tela do celular */
+    max-width: 100%;        /* Libera largura total no mobile */
   }
 }
+
 
 
 .estudante_titulo{
@@ -256,9 +180,7 @@ section.estudante {
     border-radius: 10px;    /* Opcional: deixa os cantos das fotos arredondados */
 }
 
-.estudante-nome{
-text-align: center;
-}
+
 .estudante-imagem{
 width: 110px;
 }
@@ -266,20 +188,42 @@ width: 110px;
 width: 38px;
 padding: 4px 8px;
 }
-.estudante{
-background-image: background-color(#faae43);
-padding: 24px 0;
+/* --- CONTAINER PRINCIPAL (FUNDO LARANJA) --- */
+.estudante {
+  /* CORREÇÃO: Sintaxe correta para aplicar a cor de fundo */
+  background-color: #faae43; 
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40px 20px;
 }
 
-.estudante.div{
-text-align: center;
-padding: 24px 0;
+/* --- TEXTOS ADAPTÁVEIS COM CLAMP --- */
+.estudante-nome {
+  text-align: center;
+  /* O tamanho varia entre 1.5rem (mínimo no celular) e 2.5rem (máximo no PC) */
+  font-size: clamp(1.5rem, 4vw, 2.5rem); 
+  margin-bottom: 15px;
 }
 
-.estudantes_todos{
-display: flex;
-justify-content: space-around;
+/* CORREÇÃO: Espaço em vez de ponto para selecionar a div dentro de .estudante */
+.estudante div p { 
+  text-align: center;
+  /* O texto comum varia entre 1rem (celular) e 1.25rem (PC) */
+  font-size: clamp(1rem, 2.5vw, 1.25rem); 
+  line-height: 1.5;
 }
+
+/* --- SEÇÃO DOS CARD DOS ESTUDANTES --- */
+.estudantes_todos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;      /* Permite que os estudantes quebrem de linha no celular */
+  gap: 30px;            /* Espaçamento seguro entre os itens */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 
 .essa_sou_eu {
   display: flex;
@@ -308,24 +252,37 @@ justify-content: space-around;
 @media (max-width: 600px) {
   .titulo_site { font-size: 40px !important; }
 }
-.escola{
-background-image: linear-gradient(#7288AE,#EAE0CF);
-color: white;
-display: flex;
-justify-content:center;
-padding: 24px 0;
-text-align:center;
-display:block;
+.escola {
+  /* Gradiente cobrindo as laterais de ponta a ponta */
+  background-image: linear-gradient(#7288AE, #EAE0CF);
+  width: 100%;
+  box-sizing: border-box;
+  
+  /* Alinhamento correto dos elementos internos */
+  display: flex;
+  flex-direction: column; /* Empilha os itens verticalmente */
+  align-items: center;    /* Centraliza os itens na horizontal */
+  justify-content: center;/* Centraliza os itens na vertical */
+  
+  /* Ajuste de altura e espaçamento */
+  padding: 40px 20px;     /* Acompanha dinamicamente o tamanho do texto */
+  color: white;
+  text-align: center;
 }
-.escola-titulo{
-padding: 50px;
-text-align: center;
-}
-.logo_rodape{
-height: 80px;
-padding: 12px 0;
 
+.escola-titulo {
+  margin: 0;
+  padding: 20px 0;        /* Reduzido para não esticar demais a altura */
+  font-size: 2rem;
 }
+
+.logo_rodape {
+  height: 80px;
+  width: auto;            /* Mantém a proporção da imagem */
+  padding: 12px 0;
+  display: block;         /* Remove espaços vazios abaixo da imagem */
+}
+
 
 .link{
 color: #838589;
