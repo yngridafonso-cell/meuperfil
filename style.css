@@ -225,6 +225,29 @@ text-align: center;
   .titulo_site { font-size: 40px !important; }
 }
 
+/* Seleciona o container principal e coloca os filhos em linha */
+section.estudante {
+    display: flex;          /* Ativa o alinhamento em linha */
+    flex-direction: row;    /* Garante a direção horizontal */
+    flex-wrap: nowrap;      /* Impede que os itens pulem para a linha de baixo */
+    gap: 20px;              /* Cria um espaçamento de 20px entre os blocos */
+    overflow-x: auto;       /* Adiciona uma barra de rolagem se não couber na tela */
+    padding: 15px;
+}
+
+/* Define um tamanho padrão para cada bloco de artista/música */
+.estudante-div {
+    flex: 0 0 220px;        /* Fixa a largura de cada bloco em 220px para não amassarem */
+    text-align: center;     /* Centraliza as fotos e os textos */
+}
+
+/* Ajusta o tamanho das imagens para preencherem o bloco */
+.estudante-imagem {
+    width: 100%;            /* Ocupa toda a largura do bloco de 220px */
+    height: auto;           /* Ajusta a altura proporcionalmente */
+    border-radius: 10px;    /* Opcional: deixa os cantos das fotos arredondados */
+}
+
 .estudante-nome{
 text-align: center;
 }
