@@ -301,7 +301,7 @@ justify-content: space-around;
   .titulo_site { font-size: 40px !important; }
 }
 .escola{
-background-image: linear-gradient(#40A2E3,#7FC2EF);
+background-image: linear-gradient(#7288AE,#EAE0CF);
 color: white;
 display: flex;
 justify-content:center;
@@ -320,6 +320,6 @@ padding: 12px 0;
 }
 
 .link{
-color: #232F72;
+color: #838589;
 text-decoration: none;
 }
