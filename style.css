@@ -262,29 +262,28 @@ padding: 4px 8px;
   display: flex;
   flex-direction: column; /* Empilha os itens verticalmente */
   align-items: center;    /* Centraliza os itens na horizontal */
-  justify-content: center;/* Centraliza os itens na vertical */
   
-  /* Ajuste de altura e espaçamento */
-  padding: 40px 20px;     /* Acompanha dinamicamente o tamanho do texto */
+  /* AJUSTE DE ALTURA: Removido o padding vertical exagerado e o justify-content */
+  padding: 15px 20px;     /* Altura reduzida nas laterais e topos */
   color: white;
   text-align: center;
 }
 
 .escola-titulo {
   margin: 0;
-  padding: 20px 0;        /* Reduzido para não esticar demais a altura */
-  font-size: 2rem;
+  padding: 5px 0;        /* Reduzido drasticamente para não esticar a altura */
+  font-size: 1.5rem;      /* Diminuído levemente para economizar espaço vertical */
 }
 
 .logo_rodape {
-  height: 80px;
+  height: 50px;           /* Reduzido de 80px para 50px para achatar o rodapé */
   width: auto;            /* Mantém a proporção da imagem */
-  padding: 12px 0;
+  padding: 5px 0;         /* Reduzido de 12px para 5px */
   display: block;         /* Remove espaços vazios abaixo da imagem */
 }
 
-
-.link{
-color: #838589;
-text-decoration: none;
+.link {
+  color: #838589;
+  text-decoration: none;
+  font-size: 0.9rem;      /* Ajustado para acompanhar o tamanho compacto */
 }
