@@ -62,7 +62,7 @@ body {
   box-sizing: border-box; /* Garante que o padding não quebre o layout */
   
   /* Fundo Gradiente cobrindo tudo de ponta a ponta */
-  background: linear-gradient(135deg, #000000, #111844; 
+  background: linear-gradient(135deg, #000000, #5f6279; 
   
   /* Removido border-radius para o fundo tocar as bordas do monitor */
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); 
@@ -191,7 +191,7 @@ padding: 4px 8px;
 /* --- CONTAINER PRINCIPAL (FUNDO LARANJA) --- */
 .estudante {
   /* CORREÇÃO: Sintaxe correta para aplicar a cor de fundo */
-  background-color: #111844 
+  background-color: #5c65a1 
   width: 100%;
   box-sizing: border-box;
   padding: 40px 20px;
