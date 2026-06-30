@@ -191,7 +191,7 @@ padding: 4px 8px;
 /* --- CONTAINER PRINCIPAL (FUNDO LARANJA) --- */
 .estudante {
   /* CORREÇÃO: Sintaxe correta para aplicar a cor de fundo */
-  background-color: #74a8d8; 
+  background-color: #3A9AFF; 
   width: 100%;
   box-sizing: border-box;
   padding: 40px 20px;
@@ -242,7 +242,7 @@ padding: 4px 8px;
 
 .essa_sou_eu p {
   font-size: 1.1rem;
-  color: #475569;
+  color: #3A9AFF;
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
