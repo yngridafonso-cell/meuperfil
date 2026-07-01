@@ -1,289 +1,122 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
-body{
-font-family: "Poppins", sans-serif;
-}
-header{
-background-color: #4B5694;
-color: #f8fafc;
-width: 100%;
-padding: 20px;
-}
-.cabecalho-itens{
-max-width: 1980px;
-margin: 0 auto;
-display: flex;
-align-items: center;
-justify-content: center;
-}
-.cabecalho-imagem{
-width: 10%;
-display: flex;
-justify-content: flex-start;
-align-items: center;
-}
-.titulo_site{
-padding: 50px;
-text-align: center;
-width: 50%;
-font: 30px;
-}
-.sociais{
-display: flex;
-justify-content: flex-end;
-width: 25%;
-padding-right: 30px;
-}
-
-
-
-  /* Configuração do Banner Principal */
-/* Configuração Geral da Página (Opcional) */
 body {
-  margin: 0;
-  padding: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f0fa; /* Cor de fundo suave (tom pastel/lilás) */
+    color: #333333;
 }
 
-/* --- ESTRUTURA DO BANNER PRINCIPAL (DESKTOP) --- */
+/* Cabeçalho */
+.cabecalho-itens {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.sociais img {
+    width: 40px;
+    height: auto;
+    margin-left: 15px;
+}
+
+/* 1. Banner Principal (Foto de um lado, texto do outro) */
 .banner1 {
-  display: flex;          /* Alinha foto e texto lado a lado */
-  align-items: center;    /* Centraliza verticalmente a foto e o texto */
-  justify-content: space-between; 
-  gap: 40px;              
-  
-  /* Controle de Altura e Espaçamento Interno */
-  padding: 20px 80px;     /* 20px acima/abaixo (máx. 2cm) e 80px nas laterais */
-  width: 100%;            /* Faz o banner ocupar toda a largura da tela */
-  box-sizing: border-box; /* Garante que o padding não quebre o layout */
-  
-  /* Fundo Gradiente cobrindo tudo de ponta a ponta */
-  background: linear-gradient(135deg, #000000, #5f6279; 
-  
-  /* Removido border-radius para o fundo tocar as bordas do monitor */
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); 
-}
-
-/* Container da Imagem (Lado Esquerdo) */
-.banner-foto-container {
-  flex: 1;                
-  max-width: 45%;         
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* Espaço entre a foto e o texto */
+    padding: 60px 50px;
+    background-color: #e8def8; /* Fundo ligeiramente diferente para destacar o banner */
 }
 
 .foto-pessoal {
-  width: 100%;            /* A foto se ajusta ao container */
-  height: auto;           /* Mantém a proporção original */
-  display: block;         /* Remove espaços fantasmas abaixo da imagem */
-  border-radius: 12px;    
-  object-fit: cover;      
-  border: 3px solid rgba(255, 255, 255, 0.1); 
+    width: 250px;
+    height: 250px;
+    border-radius: 50px; /* Bordas arredondadas na foto */
+    object-fit: cover;
 }
 
-/* Bloco de Texto (Lado Direito) */
 .banner-texto {
-  flex: 1;                
-  max-width: 50%;         
+    max-width: 500px;
 }
 
-.banner-texto h2 {
-  font-size: 2.2rem;
-  color: #f8fafc;         
-  margin-top: 0;
-  margin-bottom: 16px;
-  font-family: sans-serif;
-}
-
-.banner-texto p {
-  font-size: 1.1rem;
-  color: #cbd5e1;         /* Corrigido para o cinza-claro de leitura confortável */
-  line-height: 1.6;       
-  margin: 0;
-  font-family: sans-serif;
-}
-
-/* --- RESPONSIVIDADE: Adaptação para Celulares --- */
-@media (max-width: 768px) {
-  .banner1 {
-    flex-direction: column; /* Empilha a foto em cima do texto no celular */
-    text-align: center;     
-    padding: 30px 20px;     /* Ajusta o espaçamento interno para telas pequenas */
-    gap: 25px;
-  }
-
-  .banner-foto-container, 
-  .banner-texto {
-    max-width: 100%;        /* Libera largura total no mobile */
-  }
-}
-
-
-
-.estudante_titulo{
-padding: 100px;
-text-align: center;
-
-}
-
-.Minhas_músicas {
-  display: flex;
-  flex-direction: column; /* Alinha o título acima do parágrafo */
-  justify-content: center; /* Centraliza verticalmente (cima/baixo) */
-  align-items: center;     /* Centraliza horizontalmente (esquerda/direita) */
-  min-height: 100vh;       /* Faz a seção ocupar 100% da altura da tela */
-  text-align: center;      /* Garante que o texto fique centralizado */
-}
-
+/* Títulos das Seções */
 .titulo_site {
-  color: #0f172a;
-  margin-bottom: 20px;
-  font-family: sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    color: #4a2c73;
 }
 
-.essa_sou_eu p {
-  font-size: 1.1rem;
-  color: #475569;
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-/* Evita que o texto gigante quebre no celular */
-@media (max-width: 600px) {
-  .titulo_site { font-size: 40px !important; }
-}
-
-/* Seleciona o container principal e coloca os filhos em linha */
-section.estudante {
-    display: flex;          /* Ativa o alinhamento em linha */
-    flex-direction: row;    /* Garante a direção horizontal */
-    flex-wrap: nowrap;      /* Impede que os itens pulem para a linha de baixo */
-    gap: 20px;              /* Cria um espaçamento de 20px entre os blocos */
-    overflow-x: auto;       /* Adiciona uma barra de rolagem se não couber na tela */
-    padding: 15px;
-}
-
-/* Define um tamanho padrão para cada bloco de artista/música */
-.estudante-div {
-    flex: 0 0 220px;        /* Fixa a largura de cada bloco em 220px para não amassarem */
-    text-align: center;     /* Centraliza as fotos e os textos */
-    gap: 34px;
-}
-
-/* Ajusta o tamanho das imagens para preencherem o bloco */
-.estudante-imagem {
-    width: 100%;            /* Ocupa toda a largura do bloco de 220px */
-    height: auto;           /* Ajusta a altura proporcionalmente */
-    border-radius: 10px;    /* Opcional: deixa os cantos das fotos arredondados */
-}
-
-
-.estudante-imagem{
-width: 110px;
-}
-.estudante-icone{
-width: 38px;
-padding: 4px 8px;
-}
-/* --- CONTAINER PRINCIPAL (FUNDO LARANJA) --- */
-.estudante {
-  /* CORREÇÃO: Sintaxe correta para aplicar a cor de fundo */
-  background-color: #5c65a1 
-  width: 100%;
-  box-sizing: border-box;
-  padding: 40px 20px;
-}
-
-/* --- TEXTOS ADAPTÁVEIS COM CLAMP --- */
-.estudante-nome {
-  text-align: center;
-  /* O tamanho varia entre 1.5rem (mínimo no celular) e 2.5rem (máximo no PC) */
-  font-size: clamp(1.5rem, 4vw, 2.5rem); 
-  margin-bottom: 15px;
-}
-
-/* CORREÇÃO: Espaço em vez de ponto para selecionar a div dentro de .estudante */
-.estudante div p { 
-  text-align: center;
-  /* O texto comum varia entre 1rem (celular) e 1.25rem (PC) */
-  font-size: clamp(1rem, 2.5vw, 1.25rem); 
-  line-height: 1.5;
-}
-
-/* --- SEÇÃO DOS CARD DOS ESTUDANTES --- */
+/* 2. Seção de Músicas (Um do lado do outro, texto embaixo da foto) */
+/* Alinha os blocos (cards) um do lado do outro */
 .estudantes_todos {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;      /* Permite que os estudantes quebrem de linha no celular */
-  gap: 30px;            /* Espaçamento seguro entre os itens */
-  max-width: 1200px;
-  margin: 0 auto;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 30px; 
+    padding: 20px;
+}
+
+/* Mantém o texto embaixo da imagem dentro de cada bloco */
+.estudante-div {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 220px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
 
-.essa_sou_eu {
-  display: flex;
-  flex-direction: column; /* Alinha o título acima do parágrafo */
-  justify-content: center; /* Centraliza verticalmente (cima/baixo) */
-  align-items: center;     /* Centraliza horizontalmente (esquerda/direita) */
-  min-height: 100vh;       /* Faz a seção ocupar 100% da altura da tela */
-  text-align: center;      /* Garante que o texto fique centralizado */
+.estudante-imagem {
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
 }
 
-.titulo_site {
-  color: #0f172a;
-  margin-bottom: 20px;
-  font-family: sans-serif;
+/* 3. Seção Minha Vida (Textos um do lado do outro) */
+.essa_sou_eu .estudantes_todos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px 50px;
 }
 
-.essa_sou_eu p {
-  font-size: 1.1rem;
-  color: #111844;
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6;
+.essa_sou_eu .estudante-div {
+    flex: 1;
+    min-width: 200px; /* Impede que fiquem esmagados em telas menores */
+    max-width: 280px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
-/* Evita que o texto gigante quebre no celular */
-@media (max-width: 600px) {
-  .titulo_site { font-size: 40px !important; }
-}
+/* Rodapé */
 .escola {
-  /* Gradiente cobrindo as laterais de ponta a ponta */
-  background-image: linear-gradient(#7288AE, #EAE0CF);
-  width: 100%;
-  box-sizing: border-box;
-  
-  /* Alinhamento correto dos elementos internos */
-  display: flex;
-  flex-direction: column; /* Empilha os itens verticalmente */
-  align-items: center;    /* Centraliza os itens na horizontal */
-  
-  /* AJUSTE DE ALTURA: Removido o padding vertical exagerado e o justify-content */
-  padding: 15px 20px;     /* Altura reduzida nas laterais e topos */
-  color: white;
-  text-align: center;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+    background-color: #4a2c73;
+    color: #ffffff;
 }
 
-.escola-titulo {
-  margin: 0;
-  padding: 5px 0;        /* Reduzido drasticamente para não esticar a altura */
-  font-size: 1.5rem;      /* Diminuído levemente para economizar espaço vertical */
+.escola .link {
+    color: #d1bbf2;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .logo_rodape {
-  height: 50px;           /* Reduzido de 80px para 50px para achatar o rodapé */
-  width: auto;            /* Mantém a proporção da imagem */
-  padding: 5px 0;         /* Reduzido de 12px para 5px */
-  display: block;         /* Remove espaços vazios abaixo da imagem */
-}
-
-.link {
-  color: #838589;
-  text-decoration: none;
-  font-size: 0.9rem;      /* Ajustado para acompanhar o tamanho compacto */
+    width: 120px;
+    height: auto;
+    margin-bottom: 15px;
 }
