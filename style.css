@@ -32,6 +32,218 @@ body {
     background-color: #e8def8; /* Fundo ligeiramente diferente para destacar o banner */
 }
 
+.banner2 {
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .banner2 .banner-foto-container {
+      width: 90%;
+      max-width: 1000px;
+      height: 70vh;
+      margin: 0 auto;
+      overflow: hidden;
+      border: 3px solid #333;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .banner2 .foto-pessoal {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .conteudo-texto {
+  max-width: 800px; /* Limita a largura para o texto não ficar espalhado demais */
+  margin: 30px auto; /* Dá 30px de espaço acima/abaixo e centraliza na tela */
+  padding: 0 20px; /* Evita que o texto encoste nas bordas em telas de celular */
+  text-align: center; /* Centraliza o texto (opcional, mude para 'left' se preferir alinhado à esquerda) */
+}
+
+.conteudo-texto h3 {
+  font-size: 1.8rem; /* Tamanho do título */
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.conteudo-texto p {
+  font-size: 1.1rem; /* Tamanho de texto agradável para leitura */
+  line-height: 1.6; /* Espaçamento entre as linhas */
+  color: #555;
+}
+
+
+
+
+
+.banner3 {
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .banner3 .banner-foto-container {
+      width: 90%;
+      max-width: 1000px;
+      height: 70vh;
+      margin: 0 auto;
+      overflow: hidden;
+      border: 3px solid #333;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .banner3 .foto-pessoal {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    .conteudo-texto {
+  max-width: 800px; /* Limita a largura para o texto não ficar espalhado demais */
+  margin: 30px auto; /* Dá 30px de espaço acima/abaixo e centraliza na tela */
+  padding: 0 20px; /* Evita que o texto encoste nas bordas em telas de celular */
+  text-align: center; /* Centraliza o texto (opcional, mude para 'left' se preferir alinhado à esquerda) */
+}
+
+.conteudo-texto h3 {
+  font-size: 1.8rem; /* Tamanho do título */
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.conteudo-texto p {
+  font-size: 1.1rem; /* Tamanho de texto agradável para leitura */
+  line-height: 1.6; /* Espaçamento entre as linhas */
+  color: #555;
+}
+
+
+.apresentacao_bts {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh; /* Faz a seção ocupar a altura inteira da tela */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza na vertical */
+  align-items: center; /* Centraliza na horizontal */
+}
+
+/* Cria a grade de 2 colunas */
+.apresentacao_bts .estudantes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Estilo do cartão de cada bloco */
+.apresentacao_bts .estudante-div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+/* Ajuste das imagens */
+.apresentacao_bts .estudante-img {
+  width: 150px;  /* Aumentado de 100px para 150px */
+  height: 150px; /* Aumentado de 100px para 150px */
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0; /* Garante que a imagem não seja esmagada pelo texto */
+}
+
+/* Ajuste dos textos */
+.apresentacao_bts .estudante-texto {
+  flex: 1;
+}
+
+.apresentacao_bts .estudante-nome {
+  margin: 0 0 8px 0;
+  font-size: 1.1rem;
+}
+
+.apresentacao_bts .estudante-div p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Faz o 7º bloco ocupar o centro na parte de baixo */
+.apresentacao_bts .bloco-inferior {
+  grid-column: 1 / -1;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Container principal: centraliza tudo no meio da tela */
+.apresentacao_blackpink {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Grade de 2 colunas */
+.apresentacao_blackpink .estudantes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Estilo do cartão de cada bloco */
+.apresentacao_blackpink .estudante-div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+/* Ajuste da imagem (lado esquerdo) */
+.apresentacao_blackpink .estudante-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+/* Ajuste do texto (lado direito) */
+.apresentacao_blackpink .estudante-texto {
+  flex: 1;
+}
+
+.apresentacao_blackpink .estudante-nome {
+  margin: 0 0 8px 0;
+  font-size: 1.1rem;
+}
+
+.apresentacao_blackpink .estudante-div p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+
 .foto-pessoal {
     width: 250px;
     height: 250px;
